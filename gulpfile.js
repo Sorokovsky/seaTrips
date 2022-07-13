@@ -38,8 +38,7 @@ export const html = () => {
 export const css = () => {
     return gulp
     .src([
-        "src/sass/*.css",
-        "src/sass/*.sass"
+        "src/sass/style.sass"
     ])
     .pipe(sass(
         {
