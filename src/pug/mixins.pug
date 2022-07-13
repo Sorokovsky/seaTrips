@@ -1,0 +1,37 @@
+-
+    let hmenu = [
+        {
+            name: "Головна",
+            href: "/",
+        },
+        {
+            name: "послуги",
+            href: "#",
+        },
+        {
+            name: "про компанію",
+            href: "#",
+        },
+        {
+            name: "Акції",
+            href: "#",
+        },
+        {
+            name: "Партнери",
+            href: "#",
+        },
+        {
+            name: "відгуки",
+            href: "#",
+        },
+        {
+            name: "Контакти",
+            href: "#",
+        }
+    ]
+mixin menu(items)
+    nav.menu.header__menu 
+        ul.header__list.list-unstyled
+            for item in items 
+                li.header__item 
+                    a(href=item.href)= item.name

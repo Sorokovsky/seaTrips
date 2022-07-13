@@ -1,0 +1,8 @@
+include mixins.pug
+header.header
+    .container.header__container.d-flex.align-items-center.justify-content-between
+        a(href="/").logo.header__logo
+            img(src="img/logo.png", alt="Морські пригоди")
+        +menu(hmenu)
+        .burger 
+            span.burger-body
