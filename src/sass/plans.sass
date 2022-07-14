@@ -5,10 +5,11 @@
         div
             display: flex
             flex-wrap: wrap
-            gap: 10rem
+            gap: 28rem
             align-items: flex-start
-            justify-content: space-between
+            justify-content: center
             margin-bottom: 13rem
+            position: relative
     &__about
         max-width: 271rem
     &__title
@@ -76,8 +77,10 @@
         text-align: left
     &__link
         display: inline-block
-        margin: 0 auto
-        transform: translateX(100%)
+        position: absolute
+        bottom: -13rem
+        left: 50%
+        transform: translateX(50%)
         text-decoration: none
         span
             font-size: 12rem
@@ -94,3 +97,7 @@
                 margin-top: -2rem
                 margin-left: 7rem
                 content: url("../img/more.svg")
+@media screen and ( max-width:1139px)
+    .plans
+        &__link
+            transform: translateX(-50%)
