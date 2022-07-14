@@ -1,3 +1,53 @@
-section.plans#plans 
+- 
+    let planss = [
+        {
+            href: "#",
+            image: {
+                src: "img/bike.png",
+                alt: "Тур на велосипедах"
+            },
+            title: "Тур на велосипедах",
+            price: "335",
+            text: "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод."
+        },
+        {
+            href: "#",
+            image: {
+                src: "img/circle.png",
+                alt: "Екскурсія на острів"
+            },
+            title: "Екскурсія на острів",
+            price: "500",
+            text: "Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року ."
+        },
+        {
+            href: "#",
+            image: {
+                src: "img/personal.png",
+                alt: "Особливе замовлення"
+            },
+            title: "Особливе замовлення",
+            price: "250",
+            text: "Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші."
+        },
+    ]
+mixin plansCart(itemss)
+    for item in itemss
+        a.plans__item(href=item.href)
+            img.plans__icon(src=item.image.src, alt=item.image.alt)
+            p.plans__name=item.title
+            span.plans__price= item.price 
+                span  грн*
+            p.text.plans__desc= item.text
+section.plans#plans
     .container.plans__container 
-    
+        div
+            .plans__about
+                p.plans__title про нашу компанію
+                p.text.plans__text Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                a.btn.plans__btn(href="") детальніше
+                p.text.plans__warn * - зверніть увагу, зміна ціни може залежати від курсу долара.
+            +plansCart(planss)
+            a.plans__link(href="#") 
+                span дивитись усі плани
+        
