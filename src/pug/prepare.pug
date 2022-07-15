@@ -1,0 +1,57 @@
+-
+    let preparesI = [
+        {
+            image: {
+                src: "img/prepare1.jpg",
+                alt: "Романтична подорож на 2"
+            },
+            name: "Романтична подорож на 2",
+            text: "Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.",
+            price: "2599"
+        },
+        {
+            image: {
+                src: "img/prepare2.jpg",
+                alt: "Велотур"
+            },
+            name: "Велотур",
+            text: "Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!",
+            price: "555"
+        },
+        {
+            image: {
+                src: "img/prepare3.jpg",
+                alt: "На острови!"
+            },
+            name: "На острови!",
+            text: "Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!",
+            price: "1559"
+        },
+        {
+            image: {
+                src: "img/prepare4.jpg",
+                alt: "Катання на сьорфінгу"
+            },
+            name: "Катання на сьорфінгу",
+            text: "Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!",
+            price: "999"
+        },
+    ]
+mixin prepares(items)
+    for item in items 
+        .prepare__card 
+            .prepare__image 
+                img(src=item.image.src, alt=item.image.alt)
+            .prepare__desc 
+                p.prepare__name=item.name
+                p.prepare__text=item.text 
+                div 
+                    span.prepare__price.text-primary=item.price
+                        span  грн
+                    a(href="#").prepare__link.text-warning Замовити
+section.prepare 
+    .container.prepare__container 
+        p.prepare__title Спеціальні пропозиції тижня
+        p.prepare__subtitle Гарячі праозиції, по-швидше обирай і поїхали!
+        .prepare__block 
+            +prepares(preparesI)

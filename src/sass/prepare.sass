@@ -1,0 +1,70 @@
+.prepare
+    &__container
+        border-bottom: 1rem solid #dfe3e6
+    &__title
+        text-align: center
+        font-size: 36rem
+        text-transform: uppercase
+        margin-bottom: 7rem
+    &__subtitle
+        text-align: center
+        font-style: italic
+        color: #333333
+        font-size: 16rem
+        margin-bottom: 26rem
+    &__block
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-wrap: wrap
+        gap: 27rem
+    &__image
+        position: relative
+        &::before
+            opacity: 0
+            transition: .3s all linear
+            content: url('../img/tringle.png')
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 2
+        &::after
+            opacity: 0
+            transition: .3s all linear
+            position: absolute
+            bottom: -6rem
+            z-index: 1
+            left: 0
+            content: url("../img/bike2.png")
+    &__card
+        transition: .3s all linear
+        max-width: 270rem
+        &:hover
+            background-color: #fff
+            .prepare__image:before, .prepare__image:after
+                opacity: 1
+    &__desc
+        padding: 20rem
+        div
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &__name
+        font-size: 18rem
+    &__text
+        font-size: 13rem
+        color: #999999
+        margin-bottom: 16rem
+    &__price
+        font-size: 24rem
+    &__link
+        text-decoration: none
+        text-transform: uppercase
+        margin-right: 16rem
+        &:hover
+            text-decoration: underline
+        &::after
+            content: url("../img/more2.png")
+            margin-left: 5rem
+            width: 11rem
+            height: 11rem
