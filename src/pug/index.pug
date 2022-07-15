@@ -1,13 +1,15 @@
 doctype html
 html(lang="uk")
-    include head.pug
+    include componets/head.pug
     +head("Морські пригоди-веселий спосіб провести свій час")
     body
-        include header.pug
+        include componets/mixins.pug
+        include componets/header.pug
         main
-            include hero.pug
-            include plans.pug
-            include tour.pug
-            include answer.pug
-            include prepare.pug
+            include componets/hero.pug
+            include componets/plans.pug
+            include componets/tour.pug
+            include componets/answer.pug
+            include componets/prepare.pug
+            include componets/info.pug
     script(src="js/scripts.js") 

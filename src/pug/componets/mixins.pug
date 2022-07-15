@@ -1,4 +1,35 @@
-- 
+-
+    let hmenu = [
+        {
+            name: "Головна",
+            href: "/",
+        },
+        {
+            name: "послуги",
+            href: "#",
+        },
+        {
+            name: "про компанію",
+            href: "#",
+        },
+        {
+            name: "Акції",
+            href: "#",
+        },
+        {
+            name: "Партнери",
+            href: "#",
+        },
+        {
+            name: "відгуки",
+            href: "#",
+        },
+        {
+            name: "Контакти",
+            href: "#",
+        }
+    ]
+-
     let planss = [
         {
             href: "#",
@@ -35,19 +66,13 @@ mixin plansCart(itemss)
     for item in itemss
         a.plans__item(href=item.href)
             img.plans__icon(src=item.image.src, alt=item.image.alt)
-            p.plans__name=item.title
+            p.plans__name= item.title
             span.plans__price= item.price 
                 span  грн*
             p.text.plans__desc= item.text
-section.plans#plans
-    .container.plans__container 
-        div
-            .plans__about
-                p.plans__title про нашу компанію
-                p.text.plans__text Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
-                button(type="button").btn.plans__btn.btn-warning детальніше
-                p.text.plans__warn * - зверніть увагу, зміна ціни може залежати від курсу долара.
-            +plansCart(planss)
-            a.plans__link(href="#") 
-                span дивитись усі плани
-        
+mixin menu(items)
+    nav.menu.header__menu.navbar-expand-xl.navbar-dark
+        ul.header__list.list-unstyled
+            for item in items 
+                li.header__item 
+                    a(href=item.href)= item.name
