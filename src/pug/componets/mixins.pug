@@ -62,6 +62,27 @@
             text: "Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші."
         },
     ]
+-
+    let infoCarts = [
+        {
+            bg: {
+                src: "img/home.jpg"
+            },
+            title: "Графік роботи готелів.xls",
+            size: "10Mb",
+            text: "Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.",
+            href: "#"
+        },
+        {
+            bg: {
+                src: "img/people.jpg"
+            },
+            title: "Інформація про харчування.xls",
+            size: "10Mb",
+            text: "У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.",
+            href: "#"
+        },
+    ]
 mixin plansCart(itemss)
     for item in itemss
         a.plans__item(href=item.href)
@@ -76,3 +97,12 @@ mixin menu(items)
             for item in items 
                 li.header__item 
                     a(href=item.href)= item.name
+mixin info(items)
+    for item in items 
+        .info__card(style=`background-image: url(${item.bg.src})`)
+            p.info__name=item.title
+            p.info__size Розмір файла: 
+                span=  item.size
+            div
+                p.info__text= item.text
+                a.info__btn(href=item.href) скачати

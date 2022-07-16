@@ -1,3 +1,12 @@
 section.info 
     .container.info__container 
         p.info__title додаткова інформація
+        .info__block 
+            +info(infoCarts)
+            .info__answ.answ 
+                p.answ__title задати питання
+                p.answ__text Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+                a.answ__link(href="tel:+380505698511") +38 (050) 56 98 511
+                p.answ__name Анна Миколаївна
+                p.answ__role консультант
+                img.answ__avatar(src="img/avatar2.png", alt="Анна Миколаївна")
