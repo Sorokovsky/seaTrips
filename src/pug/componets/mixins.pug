@@ -85,7 +85,7 @@
     ]
 mixin plansCart(itemss)
     for item in itemss
-        a.plans__item.position-relative.text-center(href=item.href)
+        a.plans__item.col-12.col-md-6.col-lg-3.position-relative.text-center.mx-auto(href=item.href)
             img.plans__icon(src=item.image.src, alt=item.image.alt)
             p.plans__name= item.title
             span.plans__price= item.price 

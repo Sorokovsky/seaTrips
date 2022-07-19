@@ -1,10 +1,9 @@
 .plans
-    padding-top: 95px
+    padding-top: 30px
     &__container
         padding-bottom: 72px
         border-bottom: 1px solid #dfe3e6
         div.b
-            gap: 22px
             margin-bottom: 13px
     &__about
         max-width: 271px
@@ -23,7 +22,6 @@
         padding: 35px 22px
         text-decoration: none
         padding-top: 28px
-        max-width: 271px
         transition: .3s all linear
         &::before
             content: url("../img/tringle.png")
@@ -90,13 +88,12 @@
             button
                 margin-left: auto
                 margin-right: auto
-            
-        &__item
-            flex: 0 0 auto
         &__link
             transform: translateX(-50%)
 @media screen and ( max-width:360px)
     .plans
+        &__title
+            font-size: 12px
         &__link
             span
                 font-size: 10px
