@@ -1,85 +1,71 @@
 .hero
-    padding: 158rem 0
-    min-height: calc(100vh - 106rem)
-    padding-bottom: 60rem
+    padding: 158px 0
+    min-height: calc(100vh - 106px)
+    padding-bottom: 60px
     height: 100%
+    min-height: 100vh
     background-image: url('../img/herobg.jpg')
     background-repeat: no-repeat
     background-size: cover 
-    position: relative
-    background-position: center
+    background-position: center bottom
     &__container
-        padding-bottom: 50rem
-        div
-            display: flex
-            flex-direction: column
-            align-items: center
+        padding-bottom: 50px
     &__title
-        font-size: 72rem
-        color: rgb(255, 255, 255)
-        text-transform: uppercase
-        text-align: center
-        margin-bottom: 19rem
+        margin-bottom: 19px
     &__block
-        position: relative
-        max-width: 678rem
-        margin: 0 auto
-        margin-bottom: 263rem
+        max-width: 678px
+        margin-bottom: 240px
         &::before
             content: ""
-            top: -43rem
+            top: -43px
             pointer-events: none
             left: 50%
             transform: translateX(-50%)
             position: absolute
             display: block
             width: 55%
-            height: 40rem
-            border-top: 4rem solid rgba(255, 255, 255, 0.3)
-            border-right: 4rem solid rgba(255, 255, 255, 0.3)
-            border-left: 4rem solid rgba(255, 255, 255, 0.3)
+            height: 40px
+            border-top: 4px solid rgba(255, 255, 255, 0.3)
+            border-right: 4px solid rgba(255, 255, 255, 0.3)
+            border-left: 4px solid rgba(255, 255, 255, 0.3)
         &::after
             content: ""
             pointer-events: none
-            bottom: 0rem
+            bottom: 0px
             left: 50%
             transform: translate(-50%, 55%)
             position: absolute
             display: block
             width: 55%
-            height: 94rem
-            border-bottom: 4rem solid rgba(255, 255, 255, 0.3)
-            border-right: 4rem solid rgba(255, 255, 255, 0.3)
-            border-left: 4rem solid rgba(255, 255, 255, 0.3)
+            height: 94px
+            border-bottom: 4px solid rgba(255, 255, 255, 0.3)
+            border-right: 4px solid rgba(255, 255, 255, 0.3)
+            border-left: 4px solid rgba(255, 255, 255, 0.3)
     &__bottom
         margin: 0 auto
-        max-width: 325rem
+        max-width: 325px
         text-align: center
 
     &__text
         font-style: italic
-        text-align: center
-        max-width: 627rem
-        margin: 0 auto
-        margin-bottom: 28rem
+        max-width: 627px
+        margin-bottom: 28px
     &__btn
         display: inline-block
     &__ti
-        font-size: 36rem
-        color: rgb(51, 51, 51)
-        text-transform: uppercase
-        letter-spacing: 1rem
-        margin-bottom: 20rem
+        max-width: 300px
+        letter-spacing: 1px
+        margin-bottom: 20px
     &__desc
         display: block
         color: rgb(51, 51, 51) !important
         font-style: italic
-        margin-bottom: 29rem
+        margin-bottom: 29px
     &__scroll
         display: block
         position: relative
-        width: 18rem
-        height: 20rem
+        width: 18px
+        height: 20px
         margin: 0 auto
         transition: .3s all linear
         z-index: 0
@@ -92,7 +78,7 @@
             transform: scale(1.2)
 @keyframes scroll
     from
-        top: -10rem
+        top: -10px
     to
         top: 0
 @media screen and ( max-width:689px)
@@ -100,8 +86,8 @@
         &__block::before, &__block::after
             width: 80%
         &__title
-            font-size: 50rem
+            font-size: 50px
         &__text
-            font-size: 14rem !important
+            font-size: 14px !important
         &__ti
-            font-size: 30rem
+            font-size: 30px

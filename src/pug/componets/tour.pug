@@ -1,14 +1,16 @@
 section.tour 
-    .container.tour__container 
-        .tour__image 
-            img(src="img/tour.jpg", alt="Дивовижний безлюдний острів, який зводить людей з розуму")
-        .tour__block 
-            p.tour__title Дивовижний безлюдний острів, який зводить людей з розуму
-            .tour__desc 
-                .tour__item 
-                    p.text.tour__text Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
-                    button(type="button").btn.btn-warning замовити тур
-                    button(type="button").btn.btn-outline-primary.text-primary детальніше
-                .tour__price 
-                    span.text-primary.tour__p 575 грн./день
-                    p.text.tour__t В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+    .container.tour__container
+        .row.gy-4
+            .tour__image.col-12.col-xl-4.mx-auto
+               img(src="img/tour.jpg", alt="Дивовижний безлюдний острів, який зводить людей з розуму")
+            .tour__blocl.col-12.col-xl-8
+                p.tour__title.fs-1.text-black.text-uppercase.text-center.text-xl-start Дивовижний безлюдний острів, який зводить людей з розуму
+                .tour__desc.row.gy-5
+                    .tour__item.col-12.col-xl-7
+                        p.text.tour__text.text-black-50 Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                        .mx-auto.d.mx-xl-0.d-flex.align-items-center.flex-column.flex-sm-row
+                            button(type="button").btn.btn-warning.text-uppercase.text-white.mb-2.mb-sm-0 замовити тур
+                            button(type="button").btn.btn-outline-primary.text-uppercase.text-primary детальніше
+                    .tour__price.text.text-center.primary.col-12.col-xl-5
+                        span.text-primary.tour__p 575 грн./день
+                        p.text.tour__t В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.

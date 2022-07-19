@@ -1,79 +1,52 @@
 .info
     &__title
-        font-size: 36rem
-        text-transform: uppercase
-        max-width: 225rem
+        max-width: 269px
         line-height: 1
-    &__container
-        display: flex
-        align-items: flex-start
-        justify-content: space-between
-        flex-wrap: wrap
-        gap: 10rem   
-    &__block
-        max-width: 873rem
-        display: flex
-        align-items: flex-start
-        flex-wrap: wrap
-        justify-content: space-between
-        gap: 10rem
     &__card
-        padding: 21rem
-        width: 271rem
+        padding: 21px
         background-repeat: no-repeat
         background-size: cover
-        min-height: 270rem
+        background-position: center
+        min-height: 270px
         div
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-            min-height: 131rem
+            min-height: 131px
     &__name
-        color: #fff
-        max-width: 137rem
-        margin: 0 auto
-        font-size: 18rem
-        position: relative
-        margin-bottom: 5rem
+        max-width: 137px
+        margin-left: 48px
+        margin-bottom: 5px
         &::before
             position: absolute
-            top: 5rem
-            left: -52rem
+            top: 5px
+            left: -46px
             content: url("../img/file.png")
     &__size
-        width: 137rem
-        margin: 0 auto
-        font-size: 13rem
-        color: #999
-        margin-bottom: 22rem
+        width: 137px
+        color: #bbb
+        font-size: 13px
+        margin-bottom: 22px
     &__text
         color: #fff
-        font-size: 13rem
+        font-size: 13px
         flex: 1 1 auto
     &__btn
-        border-radius: 15rem
-        padding: 6rem 12rem
-        padding-left: 33rem
-        position: relative
+        border-radius: 15px
+        padding: 6px 12px
+        padding-left: 33px
         width: fit-content
         color: #ffb700
-        text-transform: uppercase
         text-decoration: none
-        border: 1rem solid #ffb700
-        font-size: 12rem
+        border: 1px solid #ffb700
+        font-size: 12px
         transition: .3s all linear
         &:hover
             transform: scale(1.2)
             color: #ffb700
         &::before
             position: absolute
-            left: 14rem
+            left: 14px
             content: url("../img/cloud.png")
     .answ
-        width: 270rem
-        padding: 37rem
-        position: relative
-        text-align: center
+        padding: 37px
         &::before,&::after
             position: absolute
             top: 0
@@ -82,7 +55,7 @@
             height: 100%
             display: block
             content: ""
-            border: 4rem solid #ffb700
+            border: 4px solid #ffb700
         &::before
             border-right: unset
         &::after
@@ -90,62 +63,40 @@
             border-left: unset
             transform: translateX(-100%)
         &__title
-            position: absolute
             top: -4%
-            font-size: 18rem
+            font-size: 18px
             width: fit-content
             color: #333
             left: 50%
             transform: translateX(-51%)
         &__text
-            text-align: center
-            font-size: 13rem
-            max-width: 158rem
-            margin: 0 auto
+            font-size: 13px
+            max-width: 158px
             color: #999999
-            margin-bottom: 35rem
+            margin-bottom: 35px
         &__link
-            display: inline-block
-            position: relative
             color: #09f
             text-decoration: none
-            font-size: 18rem
-            margin-bottom: 10rem
-            left: -0rem
+            margin-bottom: 10px
+            left: -0px
             &:hover
                 text-decoration: underline
             &::before
                 content: url("../img/call.png")
-                margin-right: 5rem
+                margin-right: 5px
         &__avatar
-            position: absolute
             left: 50%
-            width: 81rem
-            height: 81rem
+            width: 81px
+            height: 81px
             border-radius: 50%
             transform: translateX(-50%)
         &__name
-            font-size: 18rem
             color: #333
         &__role
-            font-size: 13rem
+            font-size: 13px
             color: #999
-@media screen and ( max-width: 1126px)
-    .info
-        &__title
-            max-width: 100%
-            text-align: center
-            margin: 0 auto
-            margin-bottom: 30rem
-        &__block
-            margin: 0 auto
-@media screen and ( max-width:  891px)
-    .info
-        &__block
-            justify-content: center
-            gap: 30rem
-@media screen and ( max-width: 615px)
-    .info
-        &__card
-            width: 100% 
-    
+@media screen and ( max-width: 1199px )
+    .info__title
+        max-width: 100% !important
+    .info__card
+        max-width: auto

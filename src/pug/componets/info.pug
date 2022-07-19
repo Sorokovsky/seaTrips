@@ -1,12 +1,13 @@
 section.info 
     .container.info__container 
-        p.info__title додаткова інформація
-        .info__block 
-            +info(infoCarts)
-            .info__answ.answ 
-                p.answ__title задати питання
-                p.answ__text Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
-                a.answ__link(href="tel:+380505698511") +38 (050) 56 98 511
-                p.answ__name Анна Миколаївна
-                p.answ__role консультант
-                img.answ__avatar(src="img/avatar2.png", alt="Анна Миколаївна")
+        .row.justify-content-between
+            p.info__title.text-center.text-xl-start.col-12.fs-1.text-uppercase додаткова інформація
+            .info__block.col-12.col-xl-9.row.g-3.gy-3.gy-lg-0.justify-content-between
+                +info(infoCarts)
+                .info__answ.answ.position-relative.text-center.col-12.col-lg-4
+                    p.answ__title.position-absolute задати питання
+                    p.answ__text.mx-auto.text-center Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+                    a.answ__link.position-relative.display-inline-block.fs-6(href="tel:+380505698511") +38 (050) 56 98 511
+                    p.answ__name.fs-6 Анна Миколаївна
+                    p.answ__role консультант
+                    img.answ__avatar.position-absolute(src="img/avatar2.png", alt="Анна Миколаївна")

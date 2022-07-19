@@ -1,12 +1,11 @@
 section.plans#plans
     .container.plans__container 
-        div
-            .plans__about
-                p.plans__title про нашу компанію
-                p.text.plans__text Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
-                button(type="button").btn.plans__btn.btn-warning детальніше
-                p.text.plans__warn * - зверніть увагу, зміна ціни може залежати від курсу долара.
+        div.b.d-flex.flex-wrap.position-relative.align-items-start.justify-content-center
+            .plans__about.d-flex.flex-column
+                p.plans__title.fs-2.text-uppercase.text-black про нашу компанію
+                p.text.plans__text.fs-6.text-black-50 Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                button(type="button").btn.plans__btn.btn-warning.text-uppercase.text-white детальніше
+                p.text.plans__warn.text-black-50.text-left * - зверніть увагу, зміна ціни може залежати від курсу долара.
             +plansCart(planss)
             a.plans__link(href="#") 
-                span дивитись усі плани
-        
+                span.text-primary.d-flex.align-items-center.text-uppercase дивитись усі плани

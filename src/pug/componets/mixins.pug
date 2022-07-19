@@ -85,24 +85,25 @@
     ]
 mixin plansCart(itemss)
     for item in itemss
-        a.plans__item(href=item.href)
+        a.plans__item.position-relative.text-center(href=item.href)
             img.plans__icon(src=item.image.src, alt=item.image.alt)
             p.plans__name= item.title
             span.plans__price= item.price 
                 span  грн*
-            p.text.plans__desc= item.text
+            p.text.plans__desc.text-left.text-black-50= item.text
 mixin menu(items)
-    nav.menu.header__menu.navbar-expand-xl.navbar-dark
+    nav.menu.header__menu
         ul.header__list.list-unstyled
             for item in items 
                 li.header__item 
                     a(href=item.href)= item.name
 mixin info(items)
     for item in items 
-        .info__card(style=`background-image: url(${item.bg.src})`)
-            p.info__name=item.title
-            p.info__size Розмір файла: 
-                span=  item.size
-            div
-                p.info__text= item.text
-                a.info__btn(href=item.href) скачати
+        div.col-12.col-md-6.col-lg-4.mx-auto
+            div.info__card(style=`background-image: url(${item.bg.src})`)
+                p.info__name.fs-6.position-relative.text-white=item.title
+                p.info__size Розмір файла:
+                    span=  item.size
+                div.d-flex.flex-column.justify-content-between
+                    p.info__text= item.text
+                    a.info__btn(href=item.href).position-relative.text-uppercase скачати

@@ -1,11 +1,11 @@
-section.hero 
-    .container.hero__container 
-        .hero__block 
-            h1.hero__title Морські пригоди
-            p.text.hero__text Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
-            button.btn.btn-warning.text.hero__btn(type="button") детальніше
-        .hero__bottom 
-            p.hero__ti обери свій план подорожі
+section.hero.position-relative
+    .container.title-page.text-center
+        .hero__block.position-relative.mx-auto.d-flex.flex-column.align-items-center
+            h1.hero__title.text-white.text-uppercase Морські пригоди
+            p.text.hero__text.text-center.mx-auto.fs-italic Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+            button.btn.btn-warning.text-uppercase.text.hero__btn.mx-auto.d-block(type="button") детальніше
+        .hero__bottom.d-flex.flex-column.align-items-center 
+            p.hero__ti.text-uppercase.fs-2 обери свій план подорожі
             p.text.hero__desc Наша фірма -лідер на ринку у своїй сфері
-            a.hero__scroll(href="#plans")
+            a.hero__scroll.position-relative(href="#plans")
                 img(src="img/scrolldown.png", alt="Морські пригоди") 

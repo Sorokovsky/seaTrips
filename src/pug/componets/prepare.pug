@@ -39,19 +39,19 @@
     ]
 mixin prepares(items)
     for item in items 
-        .prepare__card 
-            .prepare__image 
+        .prepare__card.col-104.mx-auto.col-lg-4.col-xl-3.col-md-5
+            .prepare__image.w-1.position-relative
                 img(src=item.image.src, alt=item.image.alt)
-            .prepare__desc 
-                p.prepare__name=item.name
-                p.prepare__text=item.text 
-                div 
+            .prepare__desc
+                p.prepare__name.fs-6=item.name
+                p.prepare__text.fs-6=item.text 
+                div.d-flex.align-items-center.justify-content-between
                     span.prepare__price.text-primary=item.price
                         span  грн
-                    a(href="#").prepare__link.text-warning Замовити
+                    a(href="#").prepare__link.d-block.text-warning.text-center Замовити
 section.prepare 
     .container.prepare__container 
-        p.prepare__title Спеціальні пропозиції тижня
-        p.prepare__subtitle Гарячі праозиції, по-швидше обирай і поїхали!
-        .prepare__block 
+        p.prepare__title.text-center.fs-1.text-uppercase Спеціальні пропозиції тижня
+        p.prepare__subtitle.text-center.fs-6 Гарячі праозиції, по-швидше обирай і поїхали!
+        .prepare__block.row.gy-3.justify-content.between.align-items-stretch
             +prepares(preparesI)
