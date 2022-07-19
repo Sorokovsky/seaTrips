@@ -44,8 +44,8 @@ mixin prepares(items)
                 .prepare__image.w-1.position-relative
                     img(src=item.image.src, alt=item.image.alt)
                 .prepare__desc
-                    p.prepare__name.fs-6=item.name
-                    p.prepare__text.fs-6=item.text
+                    p.prepare__name=item.name
+                    p.prepare__text=item.text
                     div.d-flex.align-items-center.justify-content-between
                         span.prepare__price.text-primary=item.price
                             span  грн
